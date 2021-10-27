@@ -6,7 +6,7 @@ package co.edu.usa.Reto3.web;
 
 import co.edu.usa.Reto3.model.Reservation;
 import co.edu.usa.Reto3.model.custom.CountClient;
-import co.edu.usa.Reto3.model.custom.DescriptionAmount;
+import co.edu.usa.Reto3.model.custom.StatusReservation;
 import co.edu.usa.Reto3.service.ReservationsService;
 import java.util.List;
 import java.util.Optional;
@@ -60,7 +60,7 @@ public class ReservationsController {
         return servicio.deleteReservations(reservationId);
     }
     @GetMapping("/report-status")
-    public DescriptionAmount getReservationDescriptionStatus(){
+    public StatusReservation getReservationStatusReport(){
         return servicio.getStatusReport();
     }
     

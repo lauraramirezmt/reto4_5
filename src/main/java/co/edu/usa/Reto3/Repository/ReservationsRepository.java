@@ -38,8 +38,8 @@ public class ReservationsRepository {
         crud4.delete(reservations);
     }  
     
-    public List<Reservation> getReservationByDescription (String description){
-        return crud4.findAllByStatus(description);
+    public List<Reservation> getReservationByStatus (String status){
+        return crud4.findAllByStatus(status);
     }
     
     public List<Reservation> getReservationPeriod(Date dateOne, Date dateTwo){

@@ -7,7 +7,7 @@ package co.edu.usa.Reto3.service;
 import co.edu.usa.Reto3.Repository.ReservationsRepository;
 import co.edu.usa.Reto3.model.Reservation;
 import co.edu.usa.Reto3.model.custom.CountClient;
-import co.edu.usa.Reto3.model.custom.DescriptionAmount;
+import co.edu.usa.Reto3.model.custom.StatusReservation;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -110,11 +110,11 @@ public class ReservationsService {
       return metodosCrud.getTopClients();
     }
     
-    public DescriptionAmount getStatusReport(){
-        List<Reservation> completed=metodosCrud.getReservationByDescription("completed");
-        List<Reservation> cancelled=metodosCrud.getReservationByDescription("cancelled");
+    public StatusReservation getStatusReport(){
+        List<Reservation> completed=metodosCrud.getReservationByStatus("completed");
+        List<Reservation> cancelled=metodosCrud.getReservationByStatus("cancelled");
         
-        DescriptionAmount descAmt=new DescriptionAmount(completed.size(), cancelled.size());
+        StatusReservation descAmt=new StatusReservation(completed.size(), cancelled.size());
         return descAmt;
     }
     

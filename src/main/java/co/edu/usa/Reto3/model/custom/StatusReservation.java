@@ -8,12 +8,12 @@ package co.edu.usa.Reto3.model.custom;
  *
  * @author Laura
  */
-public class DescriptionAmount {
+public class StatusReservation {
     
     private int completed;
     private int cancelled;
 
-    public DescriptionAmount(int completed, int cancelled) {
+    public StatusReservation(int completed, int cancelled) {
         this.completed = completed;
         this.cancelled = cancelled;
     }
@@ -33,5 +33,6 @@ public class DescriptionAmount {
     public void setCancelled(int cancelled) {
         this.cancelled = cancelled;
     }
-    
+
+  
 }
