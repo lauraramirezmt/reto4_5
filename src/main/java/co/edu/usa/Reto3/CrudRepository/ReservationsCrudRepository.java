@@ -21,5 +21,5 @@ public interface ReservationsCrudRepository extends CrudRepository<Reservation, 
     
    public List<Reservation> findByStartDateAfterAndStartDateBefore(Date dateOne,Date dateTwo); 
    
-    public List<Reservation> findAllByDescription (String description);
+    public List<Reservation> findAllByStatus (String status);
 }

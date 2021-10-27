@@ -39,7 +39,7 @@ public class ReservationsRepository {
     }  
     
     public List<Reservation> getReservationByDescription (String description){
-        return crud4.findAllByDescription(description);
+        return crud4.findAllByStatus(description);
     }
     
     public List<Reservation> getReservationPeriod(Date dateOne, Date dateTwo){
