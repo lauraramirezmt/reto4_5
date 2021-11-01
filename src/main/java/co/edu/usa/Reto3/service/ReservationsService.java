@@ -105,11 +105,17 @@ public class ReservationsService {
         }).orElse(false);
         return aBoolean;
     }
-    
+    /**
+     * 
+     * @return retorna consulta de clientes top
+     */
     public List<CountClient> getTopClients(){
       return metodosCrud.getTopClients();
     }
-    
+    /**
+     * 
+     * @return retorna estatus de las reservas 
+     */
     public StatusReservation getStatusReport(){
         List<Reservation> completed=metodosCrud.getReservationByStatus("completed");
         List<Reservation> cancelled=metodosCrud.getReservationByStatus("cancelled");
@@ -117,7 +123,12 @@ public class ReservationsService {
         StatusReservation descAmt=new StatusReservation(completed.size(), cancelled.size());
         return descAmt;
     }
-    
+    /**
+     * 
+     * @param d1 fecha inicio
+     * @param d2 fecha final
+     * @return retorna fechas de reservas
+     */
     public List<Reservation> getReservationPeriod(String d1, String d2){
         
         SimpleDateFormat parser=new SimpleDateFormat("yyy-MM-dd");

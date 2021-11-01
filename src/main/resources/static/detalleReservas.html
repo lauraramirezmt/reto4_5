@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+        <script type="text/javascript" src="js/actualizacionReservas.js"></script>
+        
+    </head>
+    <body>
+        <h1>Detalle de una Reserva</h1>
+        <h4>Actualiza una Reserva</h4>
+        ID <input type="number" id="idR" disabled/> <br/>
+        
+       INICIO <input type="date" id="startDate" placeholder="Start Date"/> <br>
+        
+        DEVOLUCION <input type="date" id="devolutionDate" placeholder="Devolution Date"/><br>
+        
+        STATUS <input type="text" id="status" /> <br/>
+      
+        <button id="boton" onclick="actualizarInformacionReservas()">Actualizar</button>
+
+        <br/><br/><br/>
+        <a href="index2.html">Ir al Inicio</a>
+    </body>
+</html>

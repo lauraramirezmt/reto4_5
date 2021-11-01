@@ -1,0 +1,151 @@
+
+<html> 
+    <head>
+        <title>TIENDA COMPUTADORES</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/misFunciones.js"></script>
+        <link rel="stylesheet" type="text/css" href="/style/miestilo.css"/>
+        
+    </head>
+
+    <body>
+        <h2>Tabla Computadores</h2>
+        <p>
+            Registra un nuevo Computador
+        </p>
+        
+        <label>BRAND</label> 
+        <input id="brand" type="text"/>
+        <br/>
+        <label>YEAR</label>
+        <input id="year" type="text"/>
+        <br/>
+        <label>CATEGORY_ID</label>
+        <input id="category_id" type="text"/>
+        <br/>
+        <label>NAME</label>
+        <input id="name" type="text"/>
+        <br/>
+        <label>DESCRIPTION</label>
+        <input id="description" type="text"/>
+        <br/>
+        
+        <button onclick="guardarInformacion()">Guardar</button>
+        <!--<button onclick="modificarInformacion()">Editar</button>-->
+        <div id="myTable">
+
+        </div>
+
+        <p>Computadores Registrados</p>
+        <button onclick="consultar()">Consultar datos</button>
+
+        <h2>Tabla Clientes</h2>
+        <p>
+            Registra un nuevo Cliente
+        </p>
+       
+        <label>NAME</label> 
+        <input id="namec" type="text"/>
+        <br/>
+        <label>EMAIL</label>
+        <input id="email" type="text"/>
+        <br/>
+        <label>PASSWORD</label>
+        <input id="password" type="text"/>
+        <br/>
+        <label>AGE</label>
+        <input id="age" type="text"/>
+        <br/>
+        
+                    
+        <button onclick="guardarClientes()">Guardar</button>
+        <!--<button onclick="modificarInformacionClientes()">Editar</button> -->
+        <div id="myTableClientes">
+
+        </div>
+        <div id="formularioCliente"></div>
+
+        <p>Clientes Registrados</p>
+        <button onclick="consultarClientes()">Consultar datos</button>
+
+
+        <h2>Tabla Mensajes</h2>
+        <p>
+            Registra un nuevo Mensaje
+        </p>
+        
+        <label>Nuevo Mensaje</label> 
+        <input id="mensaje" type="text"/>
+        <br/>
+        <label>Computador_Id</label>
+        <input id="computer_id" type="text"/>
+        <br/>
+         <label>Cliente_Id</label>
+        <input id="client_id" type="text"/>
+        <br/>
+
+        <button onclick="guardarMensajes()">Guardar</button>
+        
+        <div id="myTableMensajes">
+
+        </div>
+        <div id="formularioMensajes"></div>
+
+        <p>Mensajes Registrados</p>
+        <button onclick="consultarMensajes()">Consultar datos</button>
+
+        <h2>Tabla Categorias</h2>
+        <p>
+            Registra una nueva Categoria
+        </p>
+       
+        <label>Nombre</label> 
+        <input id="Cname" type="text"/>
+        <br/>
+        <label>Description</label> 
+        <input id="Cdescription" type="text"/>
+        <br/>
+
+        <button onclick="guardarInformacionCategorias()">Guardar</button>
+        
+        <div id="myTableCategoria">
+
+        </div>
+        <div id="formularioCategoria"></div>
+
+        <p>Categorias Registradas</p>
+        <button onclick="traerInformacionCategorias()">Consultar datos</button>
+        
+       
+         <h2>Tabla Reservaciones</h2>
+        <p>
+            Registra una nueva Reservacion
+        </p>
+        <label>Inicio Reservacion</label>
+        <input type="date" id="startDate" placeholder="Start Date">
+        <br>
+        <label>Devolucion</label>
+        <input type="date" id="devolutionDate" placeholder="Devolution Date">
+        <br>
+         <label>Status</label> 
+        <input id="status" type="text"/>
+        <br/>
+        <label>Computador_Id</label>
+        <input id="computer_id_r" type="text"/>
+        <br/>
+         <label>Cliente_Id</label>
+        <input id="client_id_r" type="text"/>
+        <br/>
+        
+        <button onclick="guardarInformacionReservas()">Guardar</button>
+        
+        <div id="myTableReservas">
+
+        </div>
+        <div id="formularioReservas"></div>
+        
+         <p>Reservas Registradas</p>
+        <button onclick="traerInformacionReservas()">Consultar datos</button>
+    
+</body>
+</html>
